@@ -1,0 +1,95 @@
+.User {
+    width: 100%;
+}
+
+.head {
+    display: flex;
+}
+
+.head img {
+    width: 100%;
+    height: auto;
+}
+
+.user-info {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    gap: 24px;
+}
+
+.user-panel {
+    background-color: white;
+    text-align: center;
+    padding: 16px;
+    height: 100%;
+}
+
+.avatar {
+    height: 41px;
+}
+
+.avatar img {
+    position: relative;
+    transform: scale(1);
+    top: -91px;
+    border-radius: 100px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header a{
+    text-decoration: none;
+}
+
+.right {
+    display: flex;
+    gap: 12px;
+}
+
+.right button {
+    display: flex;
+    align-items: center;
+    background: #33C9DD;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: #FFF;
+    text-align: center;
+    outline: none;
+    padding: 15px 50px;
+    box-shadow: 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+}
+
+.right button:active {
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+}
+
+.right button::selection {
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+}
+
+@media only screen and (max-width: 1300px) {
+    .cards {
+        display: flex;
+        align-items: center;
+    }
+
+    .cards .row {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .cards {
+        display: block;
+    }
+
+    .cards .row {
+        flex-direction: column;
+    }
+}
